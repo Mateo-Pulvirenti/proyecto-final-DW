@@ -1,0 +1,417 @@
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+    /* LAY OUT PAG */
+
+.flexContainer{
+    display: flex;
+    flex-direction: column;
+    background-image: url(https://images.unsplash.com/photo-1554976756-c5fa1e50c1a4?ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8c3RyZWV0fGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&w=1000&q=80);
+    background-size: cover;
+    
+}
+
+    /* STYLES HEADER */
+
+    .header{
+        min-height: 150px;
+        background-color: lightcyan;
+        
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+        .logo{
+            width: 80px;
+            height: 80px;
+            border: 2px solid gainsboro;
+            border-radius: 10%;
+            margin-left: 10px;
+            align-self: center;
+        }
+
+        
+        .divTitle{
+            flex-grow: 1;
+            align-self: center;
+        }
+        .title{
+            text-align: center;
+            border-bottom: 1px solid gainsboro;
+            line-height: 1.5;
+            letter-spacing: 0.1px;
+            font-family: 'DM Serif Display', serif;
+        }
+
+        .subtitle{
+            text-align: right;
+            font-size: 12px;
+            margin-right: 20px;
+            margin-top: 5px;
+            font-family:cursive;
+        }
+
+
+        /* STYLES NAV */
+
+        .navbar{
+            border-top: 2px solid black;
+            margin-bottom: 10px;
+            position: sticky;
+            top: -1px;
+            left: 0;
+            right: 0;
+            z-index: 1000;
+            
+        }
+
+        .nav-menu{
+            text-decoration: underline 1px;
+        }
+
+
+        
+        /* STYLES MAIN */    
+        
+        .main{
+            flex-grow: 2;
+        }
+
+        .carousel-inicio{
+            width: 70%;
+            margin-bottom: 35px;
+        }
+
+        .fotoCarousel{
+            max-width: 250px;
+            max-height: 350px;
+            margin: auto;
+        }
+
+        .contenedor-subtitulo{
+            background-color: white;
+            width: 70%;
+            min-height: 50px;
+            margin: auto;
+            margin-bottom: 50px;
+        }
+
+        .subtituloSeccion{
+            font-size: 21px;
+            text-align: center;
+            text-decoration: underline;
+            font-variant: small-caps;
+            font-family: 'Oswald', sans-serif;
+            font-weight: bolder;
+            padding: 7px;
+        }
+        
+            .articleProductos{
+                margin-bottom: 40px;
+                
+            }
+
+            .section{
+                display: flex;
+                flex-direction: column;
+                flex-wrap: wrap;
+                align-content: center;
+            }
+
+            .textoAboutUs{
+                text-align: center;
+            }
+
+            .negrita{
+                font-weight: 600;
+            }
+
+            .maps{
+                margin: auto;
+            }
+                
+            
+            .tituloProducto{
+                text-align: center;
+            }
+
+            .fotoProducto{
+                width: 250px;
+                height: 320px;
+                margin: auto;
+                margin-top: 15px;
+                border-bottom: 1px solid black;
+                border-radius: 5%;
+            }
+
+            
+
+            .button-product{
+                margin-top: 10px;
+                background-color: rgb(127, 1, 190);
+                border: 3px solid rgb(127, 1, 190);
+            }
+
+            .formularioConsulta{
+                background-color: #fff;
+                color: black;
+                border: 5px double white;
+                border-radius: 1%;
+                text-align: center;
+                margin: auto;
+                opacity: .7;
+            }
+                .formularioConsulta:hover{
+                    opacity: 1;
+                    background-color: #555;
+                    color: white;
+                }
+
+            .div-textarea{
+                margin-top: 10px;
+                margin-bottom: 5px;
+            }
+
+            .div-email{
+                margin-bottom: 10px;
+            }
+
+            .label-input{
+                font-size: 15px;
+            }
+            
+            .textarea{
+                border: none;
+                outline: none;
+                border-bottom: 2px solid rgb(114, 255, 220);
+                background-color: transparent;
+                min-width: 150px;
+                max-width: 330px;
+                padding: 5px;
+                margin: 10px;
+                font-family: sans-serif;
+                resize: both;
+                color: white;
+            }
+            .textarea:focus{
+                background-color: rgb(37, 37, 37);
+            }
+
+            .emailText{
+                border: none;
+                outline: none;
+                border-bottom: 2px solid rgb(114, 255, 220);
+                background-color: transparent;
+                font-family: sans-serif;
+                font-size: 12px;
+                padding: 5px;
+                margin: 10px;
+                color: white;
+            }   
+                .emailText:focus{
+                    background-color: rgb(37, 37, 37);
+                    background: linear-gradient(to top, rgb(39, 39, 39), rgb(88, 73, 73));
+                }
+
+                .emailText:hover{
+                    background: linear-gradient(to top, rgb(39, 39, 39), rgb(88, 73, 73));
+                }
+
+            .checkbox{
+                display: flex;
+                padding: 20px;
+                
+                justify-content: center;
+            }
+
+                .texto-checkbox{
+                    font-size: 14px;
+                }
+
+            .send-button{
+                margin-bottom: 5px;
+                font-size: 15px;
+                padding: 5px 10px;
+                border: 1px solid white;
+            }
+            .send-button:hover{
+                background: linear-gradient(to top, rgb(39, 39, 39), rgb(88, 73, 73));
+            }
+
+            .send-button:active{
+                background-color: grey;
+                opacity: .7;
+            }
+
+        /* STYLES FOOTER */
+
+    .footer{
+        background-color: lightcyan;
+        border-top: 2px solid black;
+    }
+
+        .navFooter{
+            display: flex;
+            justify-content: center;
+        }       
+            .contenedorIcono{
+                padding: 5px;
+                margin: 5px;
+            }
+
+                .icono{
+                    width: 30px;
+                    display: flex;
+                    flex-direction: column;
+                }
+
+        /* RESPONSIVE TABLET (768px) */
+
+    @media screen and (min-width: 768px) {
+        .logo{
+            width: 100px;
+            height: 100px;
+            margin-left: 40px;
+        }
+
+        .title{
+            font-size: 50px;
+        }
+        
+        .subtitle{
+            margin-right: 100px;
+            font-size: 14px;
+        }
+
+        .subtituloSeccion{
+            font-size: 24px;
+            padding: 15px;
+            margin-bottom: 15px;
+        }
+
+        .carousel-inicio{
+            margin-bottom: 60px;
+        }
+
+        .fotoCarousel{
+            max-width: 300px;
+            max-height: 400px;
+        }
+
+        .articleProductos{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            margin-bottom: 60px;
+        }
+
+        .contenedorProducto{
+            margin: 20px;
+        }
+
+        .fotoProducto{
+            width: 300px;
+            height: 390px;
+        }
+
+        .label-input{
+            font-size: 18px;
+        }
+
+        .textarea{
+            min-width: 400px;
+            max-width: 600px;
+        }
+
+        .emailText{
+            font-size: 15px;
+        }
+
+        .texto-checkbox{
+            font-size: 17px;
+        }
+
+        .send-button{
+            margin-bottom: 10px;
+            font-size: 18px;
+            padding: 8px 13px;
+        }
+        
+        .icono{
+            width: 40px;
+        }
+    }
+
+
+
+        /* RESPONSIVE PC (992px) */
+
+    @media screen and (min-width: 992px) {
+        .logo{
+            width: 120px;
+            height: 120px;
+            margin-left: 60px;
+        }
+
+        .title{
+            font-size: 60px;
+        }
+
+        .subtitle{
+            margin-right: 190px;
+            font-size: 16px;
+        }
+
+        .nav-menu{
+            display: none;
+        }
+
+        .subtituloSeccion{
+            padding: 25px;
+            font-size: 28px;
+        }
+
+        .carousel-inicio{
+            margin-bottom: 80px;
+        }
+
+        .fotoCarousel{
+            max-width: 350px;
+            max-height: 500px;
+        }
+
+        .contenedorProducto{
+            margin: 20px;
+        }
+        
+        .label-input{
+            font-size: 21px;
+        }
+
+        .textarea{
+            min-width: 600px;
+            max-width: 900px;
+            min-height: 200px;
+        }
+
+        .emailText{
+            font-size: 17px;
+        }
+
+        .texto-checkbox{
+            font-size: 20px;
+        }
+
+
+        .icono{
+            width: 50px;
+        }
+    }
+
+
